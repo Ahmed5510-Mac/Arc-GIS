@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+html,
+body,
+#viewDiv {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, rgba(45,44,74,1) 7%, rgba(25,25,41,0.9332107843137255) 27%, rgba(41,15,75,1) 62%, rgba(10,28,93,1) 76%);
+  font-family: 'Mochiy Pop P One', sans-serif;
+}
+#timeSliderDiv {
+  width: 300px;
+}
+.mainraber
+{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.container h1
+{
+    position: relative;
+    padding: 0;
+    margin-top: 30px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    color: #292727;
+    -webkit-text-stroke: 2px #fff;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    
+}
+.container h1:before {
+    width: 48px;
+    height: 5px;
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 3px;
+    left: 50%;
+    margin-left: -14px;
+    background-color: #b80000;
+}
+.container h1:after {
+    width: 250px;
+    height: 1px;
+    display: block;
+    content: "";
+    position: relative;
+    margin-top: 25px;
+    left: 50%;
+    margin-left: -120px;
+    background-color: #b80000;
+  }
+  
+form
+{
+    width: 30%;
+    transform: translateY(calc(40vh - 150px ));
+    margin: auto ;
+    background-color: rgba(255, 255, 255, 0.164);
+    padding: 25px;
+    border-radius: 30px;
+    box-shadow: 1px 11px 18px 18px rgba(0,0,0,0.7);
+-webkit-box-shadow: 1px 11px 18px 18px rgba(0,0,0,0.7);
+-moz-box-shadow: 1px 11px 18px 18px rgba(0,0,0,0.7);
+}
+form:hover
+{
+    border: 1.5px solid #fff;
+}
+
+form h2
+{
+    text-align: center;
+    color: #ccc8c8be;
+    margin: 0;
+    -webkit-text-stroke: .9px rgb(2, 2, 2);
+
+}
+form input
+{
+    margin: 10px 0 10px;
+    width: 60%;
+}
+form label
+{
+    color:#ccc8c8be;
+    -webkit-text-stroke: .9px rgb(2, 2, 2);
+
+}
+.footer
+{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+.footer button
+{
+    padding-inline:10px 30px;
+    text-align: center;
+    line-height: 1.5;
+    background: linear-gradient(90deg, rgba(35, 35, 70, 0.933) 30%, rgba(10,28,93,1) );
+    border-top-right-radius:15px;
+    border-bottom-left-radius:15px;
+    font-size: 12px;
+    -webkit-text-stroke: .9px rgb(2, 2, 2);
+}
+.footer button i
+{
+    margin-right: 10px;
+    padding:5px ;
+    border: 1px solid ;
+    border-radius: 5px;
+}
+.footer button:hover
+{
+    background: linear-gradient(90deg, rgba(10,28,93,1)30%, rgba(35, 35, 70, 0.933)  );
+}
+/* ----------------------------------------------------------- */
+
+@keyframes move-background {
+    from {
+          -webkit-transform: translate3d(0px, 0px, 0px);
+      }
+      to {  
+          -webkit-transform: translate3d(1000px, 0px, 0px);
+      }
+  }
+  @-webkit-keyframes move-background {
+    from {
+          -webkit-transform: translate3d(0px, 0px, 0px);
+      }
+      to { 
+          -webkit-transform: translate3d(1000px, 0px, 0px);
+      }
+  }
+  
+  @-moz-keyframes move-background {    
+      from {
+          -webkit-transform: translate3d(0px, 0px, 0px);
+      }
+      to { 
+          -webkit-transform: translate3d(1000px, 0px, 0px);
+      }
+  }
+  
+      @-webkit-keyframes move-background {
+      from {
+          -webkit-transform: translate3d(0px, 0px, 0px);
+      }
+      to { 
+          -webkit-transform: translate3d(1000px, 0px, 0px);
+      }
+  }
+  
+  .background-container{
+      position: fixed;
+      top: 0;
+      left:0;
+      bottom: 0;
+      right: 0;
+  }
+  
+  .stars {
+   background: black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+   position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: block;
+        z-index: 0;
+  }
+  
+  .twinkling{
+      width:10000px;
+      height: 100%;
+      background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/twinkling.png") repeat;
+      background-size: 1000px 1000px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 2;
+      -moz-animation:move-background 50s linear infinite;
+    -ms-animation:move-background 50s linear infinite;
+    -o-animation:move-background 50s linear infinite;
+    -webkit-animation:move-background 70s linear infinite;
+    animation:move-background 50s linear infinite;
+      
+  }
+  
+  .clouds{
+      width:10000px;
+      height: 100%;
+      background: transparent url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/clouds_repeat.png") repeat;
+      background-size: 1000px 1000px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 3;
+     -moz-animation:move-background 120s linear infinite;
+    -ms-animation:move-background 120s linear infinite;
+    -o-animation:move-background 120s linear infinite;
+    -webkit-animation:move-background 150s linear infinite;
+    animation:move-background 120s linear infinite;
+  }
+  img{
+    height: 70vh;
+    width:70vh;
+    position: absolute;
+    z-index: 3;
+    right: 20px;
+  }
+  
+  @media(max-width:1200px)
+  {
+
+    
+    .container h1
+    {
+    
+        color: #292727;
+        -webkit-text-stroke: 2px #fff;
+    }
+      
+    form
+    {
+        width: 40%;
+    }                                               
+    form input
+    {
+        width: 50%;
+    }
+    .footer
+    {
+        justify-content: space-between;
+        padding:0;
+        flex-wrap: wrap;
+    }
+    .footer button
+    {
+        padding-inline:10px 10px;
+        text-align: center;
+        line-height: 1.5;
+        background: linear-gradient(90deg, rgba(35, 35, 70, 0.933) 30%, rgba(10,28,93,1) );
+        border-top-right-radius:15px;
+        border-bottom-left-radius:15px;
+        font-size: 12px;
+    }
+    .footer button i
+    {
+        margin-right: 0px;
+        padding:5px ;
+        border: 1px solid ;
+        border-radius: 5px;
+    }
+    .footer button:hover
+    {
+        background: linear-gradient(90deg, rgba(10,28,93,1)30%, rgba(35, 35, 70, 0.933)  );
+    }
+    img{
+        height: 40vh;
+        width:40vh; 
+     -moz-animation:rotateB 20s linear infinite;
+     -ms-animation:rotateB 20s linear infinite;
+     -o-animation:rotateB 20s linear infinite;
+     -webkit-animation:rotateB 150s linear infinite;
+     animation:rotateB 20s linear infinite;
+      }
+  }
+  a i
+  {
+      color: #fff;
+      margin-left: 20px;
+      cursor: pointer;
+  }
